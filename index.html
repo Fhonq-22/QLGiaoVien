@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý giáo viên</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Chào mừng đến với hệ thống quản lý giáo viên</h1>
+
+    <!-- Form đăng nhập -->
+    <form id="loginForm">
+        <label for="userID">ID:</label>
+        <input type="text" id="userID" name="userID" required><br><br>
+
+        <label for="password">Mật khẩu:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <button type="submit">Đăng nhập</button>
+    </form>
+
+    <!-- Menu -->
+    <ul id="menu" style="display: none;">
+        <li><a href="giaovien.html">Thông tin giáo viên</a></li>
+        <li><a href="monhoc.html">Thông tin môn học</a></li>
+        <li><a href="lop.html">Thông tin lớp học</a></li>
+        <li><a href="phancong.html">Phân công môn học</a></li>
+        <li><button id="logoutButton">Đăng xuất</button></li>
+    </ul>
+
+    <!-- Thông báo đăng xuất thành công -->
+    <p id="logoutMessage" style="display: none;">Bạn đã đăng xuất thành công.</p>
+
+    <script src="https://cdn.jsdelivr.net/npm/xlsx@0.17.4/dist/xlsx.full.min.js"></script>
+    <script src="custom-script.js"></script>
+</body>
+</html>
